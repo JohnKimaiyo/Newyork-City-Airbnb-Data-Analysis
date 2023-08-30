@@ -17,3 +17,23 @@ SELECT TOP (1000) [id]
       ,[availability_365]
   FROM [Newyork Airbnb].[dbo].[AB_NYC_19$]
 WHERE [neighbourhood_group] like 'M%';
+
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [id]
+      ,[name]
+      ,[host_id]
+      ,[host_name]
+      ,[neighbourhood_group]
+      ,[neighbourhood]
+      ,[latitude]
+      ,[longitude]
+      ,[room_type]
+      ,[price]
+      ,[minimum_nights]
+      ,[number_of_reviews]
+      ,[last_review]
+      ,[reviews_per_month]
+      ,[calculated_host_listings_count]
+      ,[availability_365]
+  FROM [Newyork Airbnb].[dbo].[AB_NYC_19$]
+  WHERE [host_name] like '___';
